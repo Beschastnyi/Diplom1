@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Profile"
+            android:checked="true"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/listOfEating"
+            android:icon="@drawable/ic_baseline_list_alt_24"
+            android:title="List of meals"
+            tools:ignore="HardcodedText" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle"
+            android:title="Info"
+            tools:ignore="HardcodedText">
+            <menu>
+
+                <item
+                    android:id="@+id/resetPasswordInNav"
+                    android:icon="@drawable/ic_baseline_autorenew_24"
+                    android:title="Reset password"/>
+
+                <item
+                    android:id="@+id/verifyInNav"
+                    android:icon="@drawable/ic_baseline_verified_user_24"
+                    android:title="Verify" />
+
+                <item
+                    android:id="@+id/deleteInNav"
+                    android:icon="@drawable/ic_baseline_delete_forever_24"
+                    android:title="Delete Account"/>
+
+                <item
+                    android:id="@+id/logoutInNav"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    android:title="Logout"/>
+            </menu>
+        </item>
+    </group>
+</menu>
